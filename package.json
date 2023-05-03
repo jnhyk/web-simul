@@ -2,7 +2,7 @@
   "scripts": {
     "server": "cd server && nodemon server",
     "client": "cd client && npm start",
-    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+    "start": "concurrently --kill-others-on-fail \"wssh\" \"npm run server\" \"npm run client\" "
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
@@ -10,6 +10,7 @@
   "dependencies": {
     "concurrently": "^8.0.1",
     "express": "^4.18.2",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "react-helmet": "^6.1.0"
   }
 }
